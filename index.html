@@ -4,8 +4,33 @@
         <title>This is a demo title!</title>
         <link rel = "icon" href = "https://raw.githubusercontent.com/Zo-Bro-23/demo/master/demo.jpg"> 
     </head>
+    <style>
+        a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+    </style>
     <body>
-        <h1>This is a number one heading!</h1>
+        <h1 id= "test">This is a number one heading!</h1>
         <h2>This is a number two heading!</h2>
         <h3>This is a number two heading!</h3>
         <h4>This is a number two heading!</h4>
@@ -14,8 +39,8 @@
         <p>This is an example of a paragraph. <br> There can be multiple lines.
         </p>
         <p>This is another paragraph.</p>
-        <div style= "background-color:red; color:blue; font-size:500%;"><p>This is a paragraph with gigantic blue on red style.</p></div>
-        <div style= "background-color:black; color: white;"><code>This is an example of a coding block.</code></div>
+        <div style= "background-color:tomato; color:darkblue; font-size:500%;"><p>This is a paragraph with gigantic blue on red style.</p></div>
+        <div style= "background-color:darkslategray; color: gold; font-size: 300%;"><code>This is an example of a coding block.</code></div>
         <h1 style= "font-size: 500%; text-align: center;">An example image!</h1>
         <img src= "https://raw.githubusercontent.com/Zo-Bro-23/demo/master/demo.jpg" alt= "Alternative text can be put here." width= "1000px" height="1000px" style="margin-left: auto; margin-right: auto; display: block;">
         <b>This is bold text!</b>
@@ -37,5 +62,44 @@
         <p><sub>This is subscript!</sub> For example, H<sub>2</sub>O</p>
         <br>
         <p><sup>This is superscript!</sup> For example, 2<sup>3</sup></p>
+        <abbr>This is an abrevation!</abbr>
+        <address>This is an address:<br>
+                    Phone: 99929382<br>
+                    House: Villa no. 51
+        </address>
+        <bdo dir= "rtl">This text will be written right to left!</bdo>
+        <blockquote>This is a quote!</blockquote>
+        <cite>This is a citation!</cite><br>
+        <q>This is a short quote!</q><br>
+        <!--This is a comment!-->
+        <a href= "https://google.com" target= "_blank">This is a link! It will become pink if you have visited it once!</a><br>
+        <a href= "#test">Go back to the top of the page!</a>
+        <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+            The image will float to the right of the text.</p>
+            
+            <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+            The image will float to the left of the text.</p>
+            <h1>Try clicking on any of the letter below!</h1>>
+            <map name="image-map">
+                <area target="" alt="D" title="D"  coords="282,522,360,523,379,525,393,531,405,535,410,544,417,552,419,560,427,572,431,582,432,600,433,612,433,627,432,643,426,656,419,673,410,686,398,691,386,698,375,699,282,698" shape="poly" onclick="D()">
+                <area target="" alt="E" title="E"  coords="463,522,591,522,589,551,498,552,497,587,582,591,582,621,500,626,498,664,589,670,592,699,461,696" shape="poly" onclick="E()">
+                <area target="" alt="M" title="M"  coords="623,524,626,696,658,699,657,556,693,696,727,699,760,556,763,699,796,697,794,524,741,524,710,651,678,524" shape="poly" onclick="M()">
+                <area target="" alt="O" title="O"  coords="908,614,85" shape="circle" onclick="O()">
+            </map>
+            <img src="demo.jpg" usemap="#image-map">
+            <script>
+                function D () {
+                    alert("You clicked the letter D!")
+                }
+                function E () {
+                    alert("You clicked the letter E!")
+                }
+                function M () {
+                    alert("You clicked the letter M!")
+                }
+                function O () {
+                    alert("You clicked the letter O!")
+                }
+            </script>
     </body>
 </html>
